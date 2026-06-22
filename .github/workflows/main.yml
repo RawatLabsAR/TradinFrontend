@@ -24,6 +24,7 @@ jobs:
 
           rsync -av --delete \
             --exclude ".git" \
+            --exclude ".env" \
             --exclude ".github" \
             ./ /var/www/Tradin/Frontend/
 
